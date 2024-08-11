@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    body {text-align: center;}
+    .div1 {
+      border: 1px solid black;
+      width: 800px;
+      height: 200px;
+      text-align: start;
+    }
+    .div2 {
+      border: 1px solid blue;
+      background-color: red;
+    }
+  </style>
+</head>
+<body>
+
+<div class="div1">
+  <div class="div2">
+    <span>laksjd</span>
+    <table>
+      <tr><td>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Mollitia, aperiam.</td></tr>
+    </table>
+  </div>
+</div>
+
+<script>
+const openDialogButton = document.getElementById("openDialog");
+const myDialog = document.getElementById("myDialog");
+const closeDialogButton = document.getElementById("closeDialog");
+
+openDialogButton.addEventListener("click", () => {
+  myDialog.showModal(); // Open the dialog
+});
+
+closeDialogButton.addEventListener("click", () => {
+  myDialog.close(); // Close the dialog
+});
+</script>
+
+</body>
+</html>

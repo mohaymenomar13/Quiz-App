@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link href="style.css" rel="stylesheet">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz</title>
+</head>
+<body>
+    <div id="headers">
+        <img class="headImg" src="images/quiz-header.png">
+    </div>
+    <div class="child">
+        <div class="firstChild">
+            <input type="button" value="Make a Quiz" class="Button" id="sndButton1">
+            <input type="button" value="Take a Quiz" id="sndButton2" class="Button">
+        </div>
+        <div class="secondChild" id="mChild">
+            <input type="button" value="Create new one" id="mButton1" class="Button">
+            <input type="button" value="Edit Existing one" class="Button" id="mButton2">
+            <input type="button" value="Back" id="mButton3" class="Button">
+        </div>
+
+        <div class="crChild" id="crChild">
+            <div class="crChild1" id="crChild1">
+                <span class="text">What should be the type of the Quiz?</span>
+                <div class="crChild1Btns">
+                    <input type="button" value="Identification" class="crChild1Btn" id="crBtn1">
+                    <input type="button" value="Multiple Choices" class="crChild1Btn" id="crBtn2">
+                </div>
+            </div>
+
+            <div class="crChildI" id="crChildI">
+                <div class="tableEntD">
+                    <table class="crChildITable">
+                        <tr>
+                            <th class="crChildITabTh1">Answer key</th>
+                            <th class="crChildITabTh2">Description</th>
+                        </tr>
+                        <tr>
+                            <td><input type="text" name="crChildIA" class="crChildIInp" id="crChildIA" placeholder="Enter the answer Key"></td>
+                            <td><input type="text" name="crChildID" class="crChildIInp" id="crChildID" placeholder="Enter the question"></td>
+                            <td class="crChildITabTh3"><input type="button" value="Enter" id="crChildIB"></td>
+                        </tr>    
+                    </table>
+                </div>
+                <span id="noData" class="text">The data will be shown here</span>
+                <div class="crChildIData">
+                    <table id="previewTable">
+                        <tr>
+                            <td class="prevAnswer"></td><td class="prevQuestion"></td>
+                        </tr>
+                    </table>
+                </div>
+                <dialog id="dialogEditData">
+                    <input type="text" id="diaAnswer" class="crChildIInp" placeholder="Answer">
+                    <textarea name="diaQuestion" id="diaQuestion" cols="30" rows="10" class="crChildIInp" placeholder="Question"></textarea>
+                    <div id="diaBtns">
+                        <button id="diaEnter">Enter</button>
+                    <button id="diaDelete">Delete</button>
+                    <button id="diaCancel">Cancel</button>
+                    </div>
+                </dialog>
+                <dialog id="diaSave">
+                    <span class="text diaSaveSpan">What will be the name of this Quiz?</span>
+                    <input type="text" id="diaName" class="crChildIInp" placeholder="Name of the Quiz">
+                    <button id="diaSaveEnter">Enter</button>
+                    <button id="diaSaveCancel">Cancel</button>
+                </dialog>
+            </div>
+            <button id="save" class="Button">SAVE</button>
+        </div>
+
+        <div class="edChild" id="edChild">
+                <span id="noDataEd" class="text">There were no any Quizzes found.<br> <span id="noDataEdd" class="noDataEdd">Want to create one?</span></span>
+                
+                <dialog id="edDialog">
+                    <span class="text diaSaveSpan">Are you sure you want to delete it?</span><br>
+                    <button id="edDiaTakeQuiz">Quiz It</button>
+                    <button id="edDiaReview">Review</button>
+                    <button id="edDiaEdit">Edit</button>
+                    <button id="edDiaDel">Delete</button>
+                </dialog>
+        </div>
+
+        <div id="tkChild">
+            <div class="tkChildQtn">
+                <span class="text" id="tkQtn"></span>
+            </div>
+            <div class="tkChildAns">
+                <input type="text" value="HTML" class="crChildIInp tkInp" id="tkInp">
+                <button class="tkBtn" id="tkBtn"><img src="images/check.png" class="btnImg"></button>
+            </div>
+            <div id="scoreBoard">
+                <span id="number">0/0</span><br>
+                <span>Correct: <span id="scoreCorrect">0</span></span><br>
+                <span>Wrong: <span id="scoreWrong">0</span></span><br>
+                <span id="minutes">0</span>:<span id="seconds">0</span>
+            </div>
+        </div>
+
+        <div id="afterTkChild" class="text">
+        </div>
+
+        <div id="review"></div>
+        
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

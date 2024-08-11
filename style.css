@@ -1,0 +1,494 @@
+body {
+    text-align: center;
+    background-color: #8ecae6;
+    color: white;
+    overflow: auto;
+    background: url(images/indexBackground.gif);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-y: 80px;
+}
+
+.headImg {
+    width: 250px;
+}
+
+#headers {
+    background-color: #023047;
+    height: 80px;
+    margin: -20px;
+    width: 102.1%;
+    padding-bottom: 30px;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+}
+
+.child {
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    height: 80vh;
+}
+
+.firstChild {
+    margin-top: 200px;
+    z-index: 1;
+    height: 100%;
+}
+
+.secondChild {
+    position: static;
+    margin-top: -500px;
+    height: auto;
+    cursor:default;
+    opacity:0%;
+    z-index:0;
+}
+
+.crChild {
+    background-color: aquamarine;
+    border: green solid 2px;
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    height: 500px;
+    width: 800px;
+    overflow-y: auto;
+    margin-top: 20px;
+    display: none;
+}
+.edChild {
+    background-color: aquamarine;
+    border: green solid 2px;
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    height: 500px;
+    width: 800px;
+    overflow-y: auto;
+    margin-top: 20px;
+}
+#tkChild {
+    display: none;
+}
+.crChild1{
+    text-align: center;
+    display: block;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    width: 100%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+} 
+
+.crChild1Btn {
+    height: 90px;
+    width: auto;
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    opacity: 100%;
+    cursor: pointer;
+    display: block;
+    justify-content: center;
+    align-items: center;
+    font-size: 220%;
+    color: #023047;
+    font-family: cursive;
+    margin-top: 10px;
+    margin-left: 50%;
+    transform: translate(-50%, -50%);
+    box-sizing: border-box;
+}
+.crChild1Btns {
+    margin-top: 50px;
+}
+.crChildI {
+    overflow: auto;
+    width: 100%;
+    height: 500px;
+}
+.crChildI::-webkit-scrollbar {
+    display: none;
+}
+.tableEntD {
+    position: sticky;
+    top: 0;
+    z-index: 1;
+
+    background-color: aquamarine;
+    background: rgba(255, 255, 255, 0.3);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+}
+.crChildIData {
+    height: 100%;
+    color: #023047;
+    font-family: arial;
+}
+.crChildITable {
+    width: 100%;
+    height: auto;
+    padding-bottom: 3%;
+    padding-top: 20px;
+    color: #023047;
+    overflow: hidden;
+    font-family: cursive;
+}
+.crChildITabTh1 {
+    width: auto;
+}
+.crChildITabTh2{
+    text-align: start;
+}
+.prevAnswer {
+    border-right: solid 1px black;
+    width: auto;
+}
+.prevQuestion {
+    text-align: start;
+    width: 100%;
+}
+.prevTr {
+    margin-bottom: 20px;
+}
+.prevTr2 {
+    background-color: aquamarine;
+    background: rgba(255, 255, 255, 0.3);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+}
+.prevTr2:hover, .prevTr3:hover {
+    transition: 0.3s;
+    background-color: white;
+}
+.prevAnswer, .prevQuestion {
+    cursor: pointer;
+    font-size: 20px;
+}
+.crChildIInp {
+    border-radius: 10px;
+    height: 30px;
+    font-family: arial;
+    font-size: 20px;
+}
+#crChildIA {
+    text-align: center;
+    width: 200px;
+}
+#crChildIA {
+    border-color: #8ecae6;
+}
+#crChildID {
+    width: 90%;
+    margin-right: 85px;
+}
+#crChildIB {
+    width: auto;
+    margin-left: -40px;
+    height: 35px;
+    border-radius: 10px;
+    font-family: arial;
+    font-size: 20px;
+    background-color: #8ecae6;
+    cursor: pointer;
+}
+.crChildITabTh3 {
+    width: 0%;
+}
+.text {
+    font-size: 220%;
+    color: #023047;
+    font-family: cursive;
+}
+#noData {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: none;
+}
+.none {
+    opacity: 0%;
+}
+
+#hText1 {
+    font-size: 40px;
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+.Button {
+    height: 90px;
+    width: 300px;
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    opacity: 100%;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 220%;
+    color: #023047;
+    font-family: cursive;
+    margin-top: 30px;
+}
+
+.Button, .crChild1Btn:hover {
+    transition: 0.2s;
+    background-color: #ffb703;
+}
+
+.buttonText {
+    font-size: 30px;
+    font-family: cursive;
+}
+
+/*Animation*/
+.closeAni {
+    animation: closeAni forwards 2s ease-in-out;
+    cursor: default;
+}
+
+@keyframes closeAni {
+    0% {
+        opacity: 100%;
+    }
+
+    50% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 0%;
+        z-index: 0;
+    }
+}
+
+.openAni {
+    opacity: 0%;
+    animation: openAni forwards 1s ease-in-out;
+    animation-delay: 1s;
+    z-index: 2;
+}
+
+@keyframes openAni {
+    0% {
+        opacity: 0%;
+    }
+
+    100% {
+        opacity: 100%;
+        z-index: 2;
+    }
+}
+
+#dialogEditData {
+    text-align: center;
+    width: 250px;
+    height: 250px;
+    border-radius: 25px;
+    background-color: aquamarine;
+    background: rgba(255, 255, 255, 0.3);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(151, 151, 151, 0.1);
+    overflow: hidden;
+}
+#diaAnswer {
+    margin-bottom: 25px;
+    width: 100%;
+}
+#diaQuestion {
+    height: 120px;
+    width: 100%;
+    overflow-wrap: break-word;
+}
+#diaEnter, #diaDelete, #diaCancel, #diaSaveEnter, #diaSaveCancel, #edDiaEdit, #edDiaDel, #edDiaTakeQuiz, #edDiaReview {
+    width: 80px;
+    height: 40px;
+    border-radius: 15px;
+    margin-top: 10px;
+    font-family: cursive;
+    font-weight: bold;
+    font-size: 16px;
+    cursor: pointer;
+}
+#diaBtns {
+    border-color: solid 1px black;
+}
+#diaEnter, #diaSaveEnter, #save, #edDiaYes {
+    background-color: rgb(64, 255, 64);
+}
+#diaDelete, #edDiaNo {
+    background-color: rgb(255, 59, 59);
+}
+#diaCancel {
+    background-color: rgb(212, 212, 212);
+}
+#save {
+    position: absolute;
+    width: 150px;
+    height: 50px;
+    font-size: 30px;
+    background-color: lime;
+    border: black solid 1px;
+    transition: 0.3s;
+    top: 88%;
+    left: 50%;
+    transform:translate(-50%, -50%);
+}
+#save:hover {
+    width: 160px;
+    height: 60px;
+}
+#diaSave, #edDialog {
+    width: 350px;
+    height: 200px;
+    border-radius: 25px;
+    background-color: aquamarine;
+    background: rgba(255, 255, 255, 0.3);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(151, 151, 151, 0.1);
+}
+#edDialog {
+    height: 150px;
+}
+#diaName {
+    text-align: center;
+}
+.diaSaveSpan {
+    font-size: 30px;
+}
+.noDataEdd {
+    color: blue;
+    cursor: pointer;
+    text-decoration: underline;
+}
+#noDataEd {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.edChildT {
+    width: 100%;
+    height: 100%;
+}
+.edChildDiv {
+    text-align: start;
+    border-radius: 25px;
+    background-color: aquamarine;
+    background: rgba(255, 255, 255, 0.5);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(151, 151, 151, 0.1);
+    transition: 0.2s;
+    height: 100px;
+    margin-bottom: 20px;
+    cursor: pointer;
+}
+.edChildDiv:hover {
+    background: rgba(255, 255, 255, 0.8);
+}
+.tryy {
+    background-color: #023047;
+}
+.newDivClass {
+    font-family: cursive;
+    font-size: 30px;
+    color: #023047;
+    margin-left: 10px;
+}
+.newDivClass1 {
+    color: #023047;
+    font-size: 20px;
+    margin-left: 10px;
+}
+.trashcan {
+    position: absolute;
+    width: 40x;
+    height: 40px;
+    left: 93%;
+    transform: translateY(-30%);
+    transition: 0.2s;
+    z-index: 10;
+}
+.trashcan:hover {
+    transform: scale(1.3)translateY(-30%);
+}
+.tkChild {
+    height: 800px;
+    width: 500px;
+    background-color: #023047;
+}
+#tkQtn {
+    text-shadow: 5px 5px 7px rgb(255, 255, 255);
+    font-size: 30px;
+}
+.tkInp {
+    width: 300px;
+    height: 60px;
+    font-size: 30px;
+}
+.tkBtn {
+    border-radius: 15px;
+    transform: translateY(16px);
+}
+.btnImg {
+    width: 57px;
+    height: 57px;
+}
+.tkChildQtn {
+    width: 700px;
+}
+.tkChildAns {
+    position: absolute;
+    top: 65%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+#scoreBoard {
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    top: 40%;
+    left: 80%;
+}
+.wrongsTable {
+    width: 100%;
+    border: solid 1px black;
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+}
+.wrongsTable th {
+    border: solid 1px black;
+    border-radius: 16px;
+}
+.wrongsTable td {
+    font-size: auto;
+    border-bottom: solid 1px black;
+}
